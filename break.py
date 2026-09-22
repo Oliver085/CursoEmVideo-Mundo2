@@ -1,5 +1,7 @@
-c = 1
-while c != 10:
-    print(c, '->', end=' ')
-    c += 1
-print("Fim")   
+n = s= 0
+while True:
+    n = int(input("Digite um número:"))
+    if n == 999:
+        break
+    s += n
+print(f"A soma dos números digitados é {s}.")
