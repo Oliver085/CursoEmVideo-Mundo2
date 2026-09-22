@@ -4,6 +4,9 @@ print("Soma de dois números: 1")
 print("Contagem Regressiva: 2")
 print("Sair: 3")
 escolha = input("Digite o número do programa desejado: ")
+while escolha not in ["1", "2", "3"]:
+    print("Opção inválida. Por favor, escolha uma opção válida.")
+    escolha = input("Digite o número do programa desejado: ")
 if escolha == "1":
     num1 = float(input("Digite o primeiro número: "))
     num2 = float(input("Digite o segundo número: "))
